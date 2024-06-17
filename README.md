@@ -26,24 +26,21 @@ In addition to data extraction, Eric explored the use of natural language proces
 
     d. At this stage, I am not using any [RAG](https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/) techniques. Using RAG could further improve resultes, but greatly increases the size of the prompt so will increase costs on usage-based models like GPT.
 
-## Methodology
-TODO
+## Results
 
-### Code and Data References
-TODO
+Results for both summarization and Q&A can be found in the respective CSV files. My impressions overall:
 
-## Findings so far
-TODO
+1) Summarization using an existing pretrained model is not terrible, and can probably be made better through fine-tuning based on humanitarian data from [TheDeep](https://huggingface.co/nlp-thedeep) or other humanitarian soures.
 
+2) Q&A using an existing pretrained model against reliefweb summaries is not as good - we would definitely need to invest some time into fine tuning (and possibly retraining) the models that I've tested. Foundation models could also perform better, but we'll incur usage costs.
 
-### Summarization Data Quality Considerations
-TODO
+3) However well we do, we need to make sure that we decorate the data with some identification about which components were AI/ML derived.
 
-### NER / Extraction Data Quality Considerations
-TODO
+## Recommended next steps
 
-### Operational / Performance Considerations
-TODO
+1) Assuming that we feel there's value, I can continue experimentation with fine-tuning or retraining summarization models based on reliefweb data to see how much better we can get.
 
-## Recommended Next steps
-TODO
+2) I'd like to try fine-tuning some of the Q&A models to see how much they improve with training on a humanitarian dataset. 
+
+3) It would be good to examine how the foundation models do in this space - AWS Bedrock might be a good way to do some sandboxing / experimentation, but I'm not familiar with how we address usage costs for exploration.
+
