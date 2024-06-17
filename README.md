@@ -1,12 +1,12 @@
 # topic_surveyor_ml
 
-This project builds on exploratory work done by [Eric French](https://github.com/ericfrench2015/topic_surveyor/tree/main) that endeavors to pull disaster summary data from common humnitarian data sources and perform several key function:
+This project builds on exploratory work done by [Eric French](https://github.com/ericfrench2015/topic_surveyor/tree/main) that endeavors to pull disaster summary data from common humanitarian data sources and perform several key function:
 
 1) Summarize the information concisely to allow response and recovery teams to quickly understand the rough shape of what's happening
 
 2) Extract quantitative information to allow dashboarding and visualization of key statistics (killed, injured, displaced, etc)
 
-3) Use the above inforamtion to decorate a dataset that can be used to build visualization and dashboarding data products
+3) Use the above information to decorate a dataset that can be used to build visualization and dashboarding data products
 
 ## ML Experimentation
 
